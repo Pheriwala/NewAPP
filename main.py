@@ -23,7 +23,6 @@ utils.init()
 ### MAIN APP ###
 st.title('Review Scraper')
 st.caption('Scrapes [Google](https://www.google.com/) for reviews of a product')
-st.caption('Open source on [GitHub link](https://github.com/leezhongjun/ReviewScraper)')
 st.caption('Powered by [HuggingFace](https://huggingface.co/), [Streamlit](https://streamlit.io/), and [Apify](https://apify.com/)')
 
 st.markdown("""
