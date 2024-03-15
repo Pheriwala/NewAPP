@@ -23,7 +23,7 @@ def query_for_usage():
     Queries Apify for the number of queries used.
     '''
     print('Querying for usage...')
-    url = 'https://api.apify.com/v2/users/me/usage/monthly?token=' + st.secrets["APIFY_TOKEN"]
+    url = 'https://api.apify.com/v2/users/me/usage/monthly?token=' + st.secrets["apify_api_bqv6j7YPHFOAULSHcc7vUenvH0mJH34hPDZt"]
     r = requests.get(url)
     d = json.loads(r.text)
     date = gt(d['data']['usageCycle']['endAt'])
