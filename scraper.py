@@ -139,7 +139,7 @@ def show_ratings(rating_dataset, rating_round=10, plot_type='line'):
     rating_round: 0 = Continuous (0-1), 5 = Integer /5, 10 = Integer /10
     plot_type: 'Line', 'Scatter', 'Both' <- For continuous only
     '''
-    fig, ax = plt.subplots(figsize=(6,6))
+    fig, ax = plt.subplots(figsize=(3,3))
     if rating_round == 5 or rating_round == 10:
         if rating_round == 5:
             rating_dataset = np.vectorize(lambda x: round(x * 5))(rating_dataset)
@@ -175,7 +175,7 @@ def eval_sentiment(desc_dataset, model, row_labels, row_values, title):
     '''
     res = model(desc_dataset)
     df = pd.DataFrame(res)['label'].str.capitalize()
-    fig, ax = plt.subplots(figsize=(8,8))
+    fig, ax = plt.subplots(figsize=(4,4))
     df2 = df.value_counts()
     df2 = df2.reindex(row_labels)
     df2.plot(ax=ax, kind='bar')
