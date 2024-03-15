@@ -22,36 +22,21 @@ utils.init()
 
 ### MAIN APP ###
 st.title('Review Scraper')
-st.markdown("""
-    <style>
-    body {
-        background-color: #f0f2f6;
-    }
-    .stButton>button {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-    }
-    .stButton>button:hover {
-        background-color: #45a049;
-    }
-    .stTextArea>div>textarea {
-        background-color: #ffffff;
-        border-radius: 4px;
-    }
-    </style>
-""", unsafe_allow_html=True)
-
 st.caption('Scrapes [Google](https://www.google.com/) for reviews of a product')
 st.caption('Open source on [GitHub link](https://github.com/leezhongjun/ReviewScraper)')
 st.caption('Powered by [HuggingFace](https://huggingface.co/), [Streamlit](https://streamlit.io/), and [Apify](https://apify.com/)')
+
+st.markdown("""
+    <style>
+div[class*="stRadio"] > label > div[data-testid="stMarkdownContainer"] > p {
+    font-size: 17px;
+
+}
+.big-font {
+    font-size: 18px;
+}
+    </style>
+    """, unsafe_allow_html=True)
 
 st.warning('Apify has a limit of 50,000 queries a month', icon="⚠️")
 col1, col2 = st.columns(2)
