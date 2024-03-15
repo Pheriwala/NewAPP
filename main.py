@@ -12,9 +12,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="auto",
     menu_items={
-        'Get Help': 'https://www.extremelycoolapp.com/help',
-        'Report a bug': "https://www.extremelycoolapp.com/bug",
-        'About': "# This is a header. This is an *extremely* cool app!"
+        'About': "Website that scrapes Google for reviews of an item (product, movie, etc.) and runs sentiment analysis on result descriptions!"
     }
 )
 ### INITIALIZATION ###
