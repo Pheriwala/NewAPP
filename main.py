@@ -80,7 +80,6 @@ if submit or st.session_state.load_state:
             st.session_state.plot_type = st.radio('Chart type (for continuous only):', plot_types_ls, index=2)
 
         fig = scraper.show_ratings(rating_dataset, rating_round=rating_round_d[st.session_state.rating_round], plot_type=st.session_state.plot_type)
-        plt.figure(figsize=(10, 6))
         st.pyplot(fig)
         multiplier = 1 if st.session_state.rating_round == 'Continuous (0 to 1)' else rating_round_d[st.session_state.rating_round]
         st.write(f'<span class=big-font><b>Average <u>raw</u> rating:</b> `{np.mean(rating_dataset) * multiplier: .2f} / {multiplier}`</span>', unsafe_allow_html = True)
