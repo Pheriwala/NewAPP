@@ -12,7 +12,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="auto",
     menu_items={
-        'About': "Website that scrapes Google for reviews of an item (product, movie, etc.) and runs sentiment analysis on result descriptions!"
+        'About': "### Website that scrapes Google for reviews of an item (product, movie, etc.) and runs sentiment analysis on result descriptions!"
     }
 )
 ### INITIALIZATION ###
